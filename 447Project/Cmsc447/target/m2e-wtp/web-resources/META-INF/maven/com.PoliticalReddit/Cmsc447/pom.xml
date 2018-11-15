@@ -28,6 +28,7 @@
 <version>5.1.2.RELEASE</version>
 </dependency>
 
+<!-- for mysql connector to java -->
 <dependency>
 <groupId>mysql</groupId>
 <artifactId>mysql-connector-java</artifactId>
@@ -40,8 +41,33 @@
 <version>1.2</version>
 </dependency>
     
-    
-       
+<!-- for hibernate -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-core</artifactId>
+    <version>5.3.7.Final</version>
+</dependency>
+
+<!-- to work with the hibernate -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-orm</artifactId>
+    <version>5.1.2.RELEASE</version>
+</dependency>
+
+<!-- since we are using jdpc -->
+<dependency>
+    <groupId>com.mchange</groupId>
+    <artifactId>c3p0</artifactId>
+    <version>0.9.5.2</version>
+</dependency>
+
+<!-- to help with rollback and commits for DB -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-tx</artifactId>
+    <version>5.1.2.RELEASE</version>
+</dependency>
     
   </dependencies>
   <build>
